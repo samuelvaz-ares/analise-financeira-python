@@ -23,7 +23,7 @@ def analisar_fundo(ticker):
     
     plt.title(f'Análise de Tendência - {ticker}')
     plt.legend()
-    plt.show()
+    plt.savefig('grafico_mxrf11.png')
 
 # Executar para o MXRF11
 analisar_fundo("MXRF11.SA")
