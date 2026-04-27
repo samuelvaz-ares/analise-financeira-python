@@ -9,7 +9,6 @@ def analisar_fundo(ticker):
     dados = yf.download(ticker, start="2024-01-01")
 
     # 2. Cálculo de Médias Móveis (SMA)
-    # A média móvel suaviza o preço para mostrar a tendência
     dados['SMA_20'] = dados['Close'].rolling(window=20).mean()
     dados['SMA_50'] = dados['Close'].rolling(window=50).mean()
 
